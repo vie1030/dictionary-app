@@ -4,7 +4,7 @@ import axios from "axios";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState(" ");
+  let [keyword, setKeyword] = useState("");
 
   function handleApiResponse(response) {
     console.log(response.data[0]);
@@ -16,12 +16,12 @@ export default function Dictionary() {
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
+
+    // documentation: https://dictionaryapi.dev/
+
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    axios.get(apiUrl).then(handleApiResponse);
   }
-
-  // documentation: https://api.dictionaryapi.dev
-  let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-
-  axios.get(apiUrl).then(handleApiResponse);
 
   return (
     <div className="Dictionary">
