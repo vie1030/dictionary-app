@@ -1,6 +1,12 @@
 .Dictionary {
   text-align: center;
 }
+
+.Dictionary h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .Dictionary section {
   background: #56b0ae;
   padding: 30px;
