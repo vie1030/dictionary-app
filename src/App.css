@@ -2,7 +2,7 @@ body {
   background: #418698;
 }
 a {
-  color: #c9c1b4;
+  color: #f0cf9b;
 }
 .App {
   max-width: 960px;
@@ -12,11 +12,14 @@ a {
 .App-header {
   margin: 30px 0;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #e2ba78;
+  font-family: "Shizuru", cursive;
   font-weight: 500;
 }
 .App-footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   margin: 30px 0;
 }

@@ -1,9 +1,9 @@
 .Dictionary {
-  text-align: center;
+  font-family: "Varela Round", sans-serif;
 }
 
 .Dictionary h1 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -15,14 +15,15 @@
   margin: 20px 0;
 }
 .Dictionary input {
-  width: 80%;
-  padding: 6px 10px;
-  border-radius: 6px;
+  width: 90%;
+  padding: 10px 15px;
+  border-radius: 10px;
   border: 1px solid #ddd;
   color: #333;
+  font-size: 20px;
 }
 
 .Dictionary .hint {
-  font-size: 11px;
-  margin-top: 5px;
+  font-size: 14px;
+  margin-top: 8px;
 }
